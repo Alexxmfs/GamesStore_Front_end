@@ -10,7 +10,7 @@ app.use(express.static('public'));
 
 app.set('view engine', 'ejs');
 
-app.get('/listagemCategoriasJogos', (req, res)=>{
+app.get('/listagemCategoriasJogo', (req, res)=>{
     
     const urlListagemCategoria = 'http://localhost:3000/listarCategoriaJogo';
 
