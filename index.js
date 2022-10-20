@@ -10,6 +10,12 @@ app.use(express.static('public'));
 
 app.set('view engine', 'ejs');
 
+// ROTAS DE CADASTRO DE CATEGORIA
+app.get('/cadastroCategorias', (req, res)=>{
+    res.render('categoria/index');
+});
+
+//ROTA DE LISTAGEM DE CATEGORIAS
 app.get('/listagemCategoriasJogo', (req, res)=>{
     
     const urlListagemCategoria = 'http://localhost:3000/listarCategoriaJogo';
