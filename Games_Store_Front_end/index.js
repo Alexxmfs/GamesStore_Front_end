@@ -38,7 +38,16 @@ app.get('/listagemCategoriasJogo', (req, res)=>{
 
     // ROTA DE LISTAGEM DE EDIÇÂO
     app.get('/formEdicaoCategoriasJogo/:id', (req, res)=>{
+
+        // RECEBE O ID DE CATEGORIA QUE VAI SER EDITADO
         let {id} = req.params;
+        console.log(id);
+
+        //CHMADA DO AXIOS PARA A API
+        const urlListagemCategoria = `http://localhost:3000/listarCategoriaJogo${id}`;
+
+
+
         res.render('categoria/editarCategoriaJogo');
     });
 
