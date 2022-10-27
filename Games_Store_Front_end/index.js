@@ -11,7 +11,7 @@ app.use(express.static('public'));
 app.set('view engine', 'ejs');
 
 // ROTAS DE CADASTRO DE CATEGORIA
-app.get('/cadastroCategorias', (req, res)=>{
+app.get('/cadastroCategoriasJogos', (req, res)=>{
     res.render('categoria/index');
 });
 
