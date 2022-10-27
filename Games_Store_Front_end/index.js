@@ -36,6 +36,12 @@ app.get('/listagemCategoriasJogo', (req, res)=>{
         }); 
     });
 
+    // ROTA DE LISTAGEM DE EDIÇÂO
+    app.get('/formEdicaoCategoriasJogo/:id', (req, res)=>{
+        let {id} = req.params;
+        res.render('categoria/editarCategoriaJogo');
+    });
+
 app.listen(3001, ()=>{
     console.log('SERVIDOR RODANDO EM: http://localhost:3001');
 });
