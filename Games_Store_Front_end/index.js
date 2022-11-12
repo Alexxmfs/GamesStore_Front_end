@@ -44,11 +44,41 @@ app.get('/listagemCategoriasJogo', (req, res)=>{
         console.log(id);
 
         //CHMADA DO AXIOS PARA A API
-        const urlListagemCategoria = `http://localhost:3000/listarCategoriaJogo${id}`;
+        const urlListagemCategoria = `http://localhost:3000/listarCategoriaJogo/${id}`;
 
+        axios.get(urlListagemCategoria)
+        .then(
+            (response)=>{
 
+                let categoria = response.data;
+                res.render('categoria/editarCategoriaJogo', {categoria});
 
-        res.render('categoria/editarCategoriaJogo');
+            }
+        )
+    });
+
+    app.post('/alterarCategoriaJogo', (req, res)=>{
+
+        const urlAlterarCategoria = 'http://localhost:3000/alterarCategoriaJogo';
+        console.log(req.body);
+
+        axios.put(urlAlterarCategoria, req.body)
+        .then(
+            res.send('ALTERADO!')
+        )
+
+    });
+
+    app.delete('/excluirCategoriaJogo/:id', (req, res)=>{
+
+        const urlAlterarCategoria = 'http://localhost:3000/alterarCategoriaJogo';
+        console.log(req.body);
+
+        axios.put(urlAlterarCategoria, req.body)
+        .then(
+            res.send('ALTERADO!')
+        )
+
     });
 
 app.listen(3001, ()=>{
