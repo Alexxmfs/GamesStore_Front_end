@@ -7,7 +7,7 @@
 <img src="https://raw.githubusercontent.com/Alexxmfs/GamesStore_Front_end/https/github.com/Alexxmfs/245tp1/categoriasImage.PNG" />
 
 
-## DESCRIÇÃO DO PROJETOa
+## DESCRIÇÃO DO PROJETO
 <p align="justify">
 Trata-se de um projeto de front-end sendo executado em NODEJS com uso de da "view engine" EJS. A finalidade do projeto é demonstrar para os alunos(as) do curso de Desenvolvimento de sistemas uma forma de acessar por meio do AXIOS uma API também desenvolvida em NODEJS.
 
