@@ -35,6 +35,44 @@
   --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
 }
 
+.textGradient {
+  background: linear-gradient(90deg, #00dbde, #5cfa86);
+  font-weight: 600;
+  font-size: 20px;
+  text-transform: uppercase;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.titleHome {
+  font-size: 4.5rem;
+  margin-left: 15px;
+  margin-top: 120px;
+  color: #FFF;
+}
+
+.buttonNormal {
+  border: none;
+  margin: 20px;
+  padding: 22px;
+  width: 210px;
+  font-family: "montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 18px;
+  border-radius: 10px;
+  cursor: pointer;
+  color: #FFF;
+  background-size: 200%;
+  transition: 0.6s;
+}
+
+.buttonGradient {
+  background-image: linear-gradient(to left, #00FF77, #078513, #C7F800);
+}
+
+.buttonNormal:hover{
+  background-position: right;
+}
 *,
 *::before,
 *::after {
@@ -58,6 +96,7 @@ article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
   display: block;
 }
 
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
@@ -67,6 +106,8 @@ body {
   color: #212529;
   text-align: left;
   background-color: #fff;
+  background-image: url("https://wallpapercave.com/wp/wp11607401.jpg");
+  background-size: cover;
 }
 
 [tabindex="-1"]:focus {
@@ -1816,9 +1857,9 @@ pre code {
   font-size: 1rem;
   line-height: 1.5;
   color: #495057;
-  background-color: #fff;
+  background-color: #3f403f;
   background-clip: padding-box;
-  border: 1px solid #ced4da;
+  border: 1px solid #515251;
   border-radius: 0.25rem;
   transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
 }
@@ -1836,7 +1877,7 @@ pre code {
 
 .form-control:focus {
   color: #495057;
-  background-color: #fff;
+  background-color: #3f403f;
   border-color: #80bdff;
   outline: 0;
   box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);

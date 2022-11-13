@@ -10,14 +10,14 @@
 
         <%- include('../partials/menu.ejs') %>
 
-        <div class="card mt-2">
-            <div class="card-header">CADASTRO DE CATEGORIAS DE JOGOS</div>
+        <div class="card mt-2 bg-dark">
+            <div class="card-header text-light">CADASTRO DE CATEGORIAS DE JOGOS</div>
         </div>
 
         <div class="card-body">
             <form action="http://localhost:3000/inserirCategoriaJogo" method="post">
                 
-                <label for="">CATEGORIA</label>
+                <label class="text-light" for="">CATEGORIA</label>
                 <input type="text" class="form-control" 
                         name="nome_categoria" id="nome_categoria"
                         placeholder="DIGITE UMA CATEGORIA">

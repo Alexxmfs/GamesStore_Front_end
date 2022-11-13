@@ -10,17 +10,17 @@
 
         <%- include('../partials/menu.ejs')  %>
 
-        <div class="card mt-2">
-            <div class="card-header">LISTAGEM DE CATEGORIAS DE JOGOS</div>
+        <div class="card mt-2 bg-dark">
+            <div class="card-header bg-dark text-light">LISTAGEM DE CATEGORIAS DE JOGOS</div>
         </div>
 
         <%
             categorias.forEach(categoria=>{
         %>
 
-            <div class="card mt-2">
+            <div class="card mt-2 bg-dark">
         
-                <div class="card-body">
+                <div class="card-body bg-dark text-light">
                     <%= categoria.nome_categoria %>
                 </div>
 

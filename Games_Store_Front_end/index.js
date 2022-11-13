@@ -15,6 +15,11 @@ app.get('/cadastroCategoriasJogos', (req, res)=>{
     res.render('categoria/index');
 });
 
+app.get('/HomeScreen', (req, res)=>{
+    res.render('categoria/homeScreen');
+});
+
+
 //ROTA DE LISTAGEM DE CATEGORIAS
 app.get('/listagemCategoriasJogo', (req, res)=>{
     
