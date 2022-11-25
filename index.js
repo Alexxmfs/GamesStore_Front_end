@@ -74,13 +74,14 @@ app.get('/listagemCategoriasJogo', (req, res)=>{
 
     });
 
-    // app.delete('/excluirCategoriaJogo/:id', (req, res)=>{
-
-    //     let {id} = req.params;
-    //     console.log(id);
-    //     axios.delete(`http://localhost:3000/excluirCategoriaJogo/${id}`);
-
-    // });
+    //ROTA DE EXCLUSÃO
+    app.get ('/deletarCategoria/:id',(req, res)=>{
+        let id = req.params.id;
+        const urlDeletarCategoria = `http://localhost:3000/excluirCategoria/${id}`;
+        axios.delete(urlDeletarCategoria, req.body)
+        .then(
+            res.send('DELETADO')
+        )});
 
 app.listen(3001, ()=>{
     console.log('SERVIDOR RODANDO EM: http://localhost:3001');
